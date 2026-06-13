@@ -1,31 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Sean Uldrich's Webpage</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Sean Uldrich!</h1>
-				<p>This is my personal webpage with my projects and references, welcome! <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="smu2001@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Suldrich">github.com/Suldrich</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding: 50px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            margin: auto;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            color: #0a66c2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
 <body>
-<title> Please see my projects below </title>
+    <div class="card">
+        <h1>Your Name</h1>
+        <p>Welcome to my page!</p>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+            View my LinkedIn Profile
+        </a>
+
+        <!-- Contact Info -->
+        <div class="contact">
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+    </div>
 </body>
+</html>
