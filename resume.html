@@ -105,26 +105,25 @@ a:hover {
 }
     
 .skills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
+    text-align: center;
     padding: 0;
     margin: 10px 0;
-    list-style: none;
 }
 
 .skills li {
+    display: inline;       /* ✅ THIS is the key fix */
     font-weight: bold;
 }
     
 .skills li::after {
     content: " •";
-    margin-left: 6px;
 }
 
 .skills li:last-child::after {
     content: ""; 
+    font-weight: bold;
+    letter-spacing: 0.3px;
+
 }
 
 </style>
