@@ -79,43 +79,64 @@ ul {
     text-align: center;
     margin-top: 30px;
 }
-    /* TIMELINE */
+   /* TIMELINE CONTAINER */
 .timeline {
-    border-left: 2px solid #000;
-    max-width: 500px;
-    margin: 20px auto;
-    padding-left: 20px;
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 2px solid #000;
+    margin-top: 20px;
+    scroll-snap-type: x mandatory;
 }
 
+/* EACH ITEM */
 .timeline-item {
-    margin-bottom: 20px;
+    min-width: 200px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
     position: relative;
+    scroll-snap-align: start
 }
 
+/* DOT */
 .timeline-item::before {
     content: "";
     position: absolute;
-    left: -9px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    background-color: #000;
+    top: -11px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #000;
     border-radius: 50%;
 }
 
+/* VISIBLE (when animated in) */
+.timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TEXT */
 .timeline-date {
     font-size: 12px;
     color: #555;
-    margin-bottom: 2px;
 }
 
 .timeline-title {
     font-weight: bold;
+    margin-top: 5px;
 }
     
-.timeline-item:hover {
-    opacity: 0.7;
+.timeline::-webkit-scrollbar {
+    height: 6px;
 }
+
+.timeline::-webkit-scrollbar-thumb {
+    background: #999;
+}
+
 </style>
 </head>
 
@@ -147,7 +168,7 @@ ul {
         <ul>
             <li>I am a nerd who enjoys working with data and learning new technical skills</li>
             <li>I am a huge sports fan, especially soccer</li>
-            <li>Newcastle UHnited is my team, along with any Minneosta sports team</li>
+            <li>Newcastle United is my team, along with any Minneosta sports team</li>
             <li>I love staying active and spending time with friends</li>
             <li>Mostly I love my wonderful girlfriend</li>
         </ul>
@@ -162,7 +183,7 @@ ul {
             <li>I am a sucker for RomCom movies</li>
         </ul>
     </div>
-    <div class="section">
+   <div class="section">
     <h2>Career Timeline</h2>
 
     <div class="timeline">
@@ -181,9 +202,12 @@ ul {
 
         <div class="timeline-item">
             <div class="timeline-date">2019 – 2023</div>
-            <div class="timeline-title">B.A. in Economics</div>
+            <div class="timeline-title">B.A. Economics</div>
             <p>University of Minnesota</p>
         </div>
+
+    </div>
+</div>
 
     </div>
 </div>
@@ -197,7 +221,21 @@ ul {
     
 
 </div>
+<script>
+const items = document.querySelectorAll('.timeline-item');
 
+function showOnScroll() {
+    items.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.left < window.innerWidth - 50) {
+            item.classList.add('show');
+        }
+    });
+}
+
+window.addEventListener('scroll', showOnScroll);
+window.addEventListener('load', showOnScroll);
+</script>
 </body>
 </html>
 ``
