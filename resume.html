@@ -6,93 +6,96 @@
     <title>Sean Uldrich Resume</title>
 
     <style>
-      body {
+     body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #eaf3ff, #f4f6f8);
+    background-color: #ffffff;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
+    color: #222;
 }
 
 .container {
     max-width: 850px;
     margin: auto;
-    background: white;
-    padding: 0;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 /* HEADER */
 .header {
     text-align: center;
-    background: linear-gradient(135deg, #007BFF, #00c6ff);
-    color: white;
-    padding: 30px 20px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .header h1 {
     margin: 0;
-    font-size: 34px;
-    letter-spacing: 1px;
+    font-size: 32px;
+    letter-spacing: 1px;    
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .header p {
-    margin: 8px 0;
-    font-size: 15px;
+    margin: 6px 0;
+    font-size: 14px;
 }
 
 .header a {
-    color: white;
+    color: #000;
     text-decoration: none;
 }
 
 /* SECTIONS */
 .section {
-    padding: 20px 30px;
-    border-left: 5px solid #007BFF;
-    margin: 20px;
-    background: #fafafa;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
+    margin-bottom: 25px;
 }
 
-.section:hover {
-    transform: translateY(-3px);
-}
-
-/* TITLES */
+/* SECTION TITLES */
 h2 {
-    color: #007BFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-/* LISTS */
+/* TEXT */
+p {
+    margin: 5px 0;
+}
+
 ul {
-    padding-left: 20px;
+    padding-left: 18px;
+    margin-top: 5px;
+}
+
+/* JOB TITLES */
+strong {
+    font-size: 15px;
 }
 
 /* BUTTON */
 .btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #28a745, #5be584);
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 6px;
-    margin: 20px auto;
-    font-weight: bold;
+    display: block;
     text-align: center;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 16px;
+    border: 1px solid #000;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #218838, #48c774);
+    background-color: #000;
+    color: white;
 }
         
-strong {
-    color: #222;
-    font-size: 16px;
+a:hover {
+    text-decoration: underline;
 }
     </style>
 </head>
@@ -138,7 +141,9 @@ strong {
 
         <div class="section">
             <h2>Experience</h2>
-            <p><strong>SAS Analyst II</strong></p>
+            <p><strong>SAS Analyst II</strong>
+            <span style="float:right;">2023–2026</span>
+            </p>
             <p>Computershare LTD• 2023-2026</p>
             <ul>
                 <li>Analyze datasets and generate insights for business decision-making</li>
