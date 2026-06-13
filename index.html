@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sean Uldrich Contact Page</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,8 +37,25 @@
             margin-top: 20px;
             font-size: 16px;
         }
+
+        /* ✅ Button styling moved here */
+        .btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
+
 <body>
     <div class="card">
         <h1>Sean Uldrich</h1>
@@ -54,27 +71,11 @@
             <p>Email: <a href="mailto:smu2001@gmail.com">smu2001@gmail.com</a></p>
             <p>Phone: <a href="tel:+16128502301">+1 (612) 850-2307</a></p>
         </div>
+
+        <!-- ✅ Button moved inside -->
+        <a href="projects.html" class="btn">
+            See My Projects Below
+        </a>
     </div>
-<a href="projects.html" class="btn">
-    See My Projects Below
-</a>
 </body>
-    
-<style>
-.btn {
-    display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 6px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-</style>
-
-    
 </html>
