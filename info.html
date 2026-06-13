@@ -79,6 +79,43 @@ ul {
     text-align: center;
     margin-top: 30px;
 }
+    /* TIMELINE */
+.timeline {
+    border-left: 2px solid #000;
+    max-width: 500px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.timeline-title {
+    font-weight: bold;
+}
+    
+.timeline-item:hover {
+    opacity: 0.7;
+}
 </style>
 </head>
 
@@ -125,6 +162,31 @@ ul {
             <li>I am a sucker for RomCom movies</li>
         </ul>
     </div>
+    <div class="section">
+    <h2>Career Timeline</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-date">2023 – Present</div>
+            <div class="timeline-title">SAS Analyst II</div>
+            <p>Computershare LTD</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2020 – 2023</div>
+            <div class="timeline-title">Supply Chain Student Support</div>
+            <p>University of Minnesota</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">2019 – 2023</div>
+            <div class="timeline-title">B.A. in Economics</div>
+            <p>University of Minnesota</p>
+        </div>
+
+    </div>
+</div>
 
     <!-- Navigation -->
     <div class="nav">
@@ -132,6 +194,7 @@ ul {
         <a href="resume.html" class="btn">Resume</a>
         <a href="projects.html" class="btn">Projects</a>
     </div>
+    
 
 </div>
 
