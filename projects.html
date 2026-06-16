@@ -160,15 +160,35 @@ h2 {
 }
 
 .project-links {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
     margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
 }
 
 .project-links a {
-    flex: 1;
-    text-align: center;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #334155;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.project-links a:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+    .project-links a:first-child {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+}
+
+.project-links a:first-child:hover {
+    background-color: #0ea5e9;
 }
 
     </style>
@@ -201,13 +221,9 @@ h2 {
     <h3>📊 Walmart Sales Dashboard</h3>
     <p>Interactive Excel dashboard analyzing sales trends, store performance, and external factors.</p>
 
-    <a href="ExcelDashboard.png" target="_blank">
-        <img src="ExcelDashboard.png" alt="Dashboard Preview" class="project-image">
-    </a>
-
     <div class="project-links">
-        <a href="dashboard.xlsx" class="btn" target="_blank">View Interactive (Excel)</a>
-        <a href="ExcelDashboard.png" class="btn" target="_blank">View Image (Preview)</a>
+        <a href="Dashboard.xlsm" class="btn" target="_blank">View Dashboard</a>
+        <a href="ExcelDashboard.png" class="btn" target="_blank">Image Preview</a>
     </div>
 </div>
 
