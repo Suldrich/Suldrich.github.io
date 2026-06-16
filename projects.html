@@ -147,6 +147,29 @@ h2 {
     max-width: 500px;
     margin: 0 auto;
 }
+    .project-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.03);
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.project-links a {
+    flex: 1;
+    text-align: center;
+}
 
     </style>
 </head>
@@ -174,23 +197,27 @@ h2 {
 
 <div class="projects">
 
-    <!-- Project 1 -->
+<div class="project-card">
+    <h3>📊 Walmart Sales Dashboard</h3>
+    <p>Interactive Excel dashboard analyzing sales trends, store performance, and external factors.</p>
 
-<a href="Dashboard.xlsm" class="project-card">
-    <h3>View My Interactive Dashboard</h3>
-    <p>Interactive Excel dashboard analyzing Walmart Sales Data</p>
-</a>
+    <a href="ExcelDashboard.png" target="_blank">
+        <img src="ExcelDashboard.png" alt="Dashboard Preview" class="project-image">
+    </a>
 
+    <div class="project-links">
+        <a href="dashboard.xlsx" class="btn" target="_blank">View Interactive (Excel)</a>
+        <a href="ExcelDashboard.png" class="btn" target="_blank">View Image (Preview)</a>
+    </div>
+</div>
 
-
-
-    <!-- Project 2 -->
+    
     <a href="#" class="project-card">
         <h3>📈 SQL Analysis</h3>
         <p>Data exploration and insights using SQL queries and reporting.</p>
     </a>
 
-    <!-- Project 3 -->
+    
     <a href="#" class="project-card">
         <h3>📉 Forecast Model</h3>
         <p>Predictive modeling based on historical trends and data analysis.</p>
